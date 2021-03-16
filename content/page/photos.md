@@ -6,5 +6,5 @@ menu:
     main: 
         weight: -85
         pre: photo
-license: "CC BY-NC-ND 4.0"
+license: "Licensed under CC BY-NC-ND 4.0"
 ---
