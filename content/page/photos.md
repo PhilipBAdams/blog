@@ -1,7 +1,7 @@
 ---
 title: "Photos"
 date: 
-draft: true
+draft: false
 menu:
     main: 
         weight: -85
