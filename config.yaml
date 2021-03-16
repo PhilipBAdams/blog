@@ -31,8 +31,8 @@ params:
         emoji: 
         subtitle: Systems problems and other topics
         avatar:
-            local: false
-            src: /img/avatar.png
+            local: true
+            src: img/avatar.png
 
     article:
         math: true
