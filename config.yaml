@@ -32,7 +32,7 @@ params:
         subtitle: Systems problems and other topics
         avatar:
             local: false
-            src: img/avatar.png
+            src: https://philipbadams.github.com/blog/img/avatar.png
 
     article:
         math: true
