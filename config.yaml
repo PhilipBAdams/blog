@@ -73,8 +73,9 @@ params:
         cover:
             enabled: true
         content:
-            enabled: true
+          enabled: true
 
+    timeout: 60000
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter

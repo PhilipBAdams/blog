@@ -31,6 +31,8 @@ license: "Licensed under CC BY-NC-ND 4.0"
 ![Coast Track, Kaikōura, NZ, September 2018](path_mtns.jpg)
 ![Kaikōura, NZ, September 2018](nightsky.jpg)
 
+![Coast Track, Kaikōura, NZ, September 2018](trail_and_bay.jpg)
+![Coast Track, Kaikōura, NZ, September 2018](winding_road.jpg)
 ![Botanic Garden, Wellington, NZ, September 2018](monkey_puzzle.jpg)
 
 ![Fushimi Inari Shrine at night, Kyoto, JP, September 2019](gates.jpg)
