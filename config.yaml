@@ -4,6 +4,8 @@ theme: hugo-theme-stack
 paginate: 5
 title: Philip Adams
 
+timeout: 60000
+
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn
 DefaultContentLanguage: en
@@ -74,8 +76,6 @@ params:
             enabled: true
         content:
           enabled: true
-
-    timeout: 60000
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
