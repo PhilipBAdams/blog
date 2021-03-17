@@ -38,3 +38,4 @@ license: "Licensed under CC BY-NC-ND 4.0"
 ![Fushimi Inari Shrine at night, Kyoto, JP, September 2019](gates.jpg)
 ![Arashiyama Monkey Park, Kyoto, JP, September 2019](monkey.jpg)
 
+For higher quality copies of these images, [contact me](/blog/about#contact).
