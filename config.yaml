@@ -1,4 +1,4 @@
-baseurl: https://philipbadams.github.com/blog/
+baseurl: https://blog.pbada.ms
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
@@ -6,7 +6,8 @@ title: Philip Adams
 
 timeout: 60000
 
-googleAnalytics: G-WC1YZ73M9R
+googleAnalytics: 
+#G-WC1YZ73M9R
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn
