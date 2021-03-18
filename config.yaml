@@ -37,7 +37,7 @@ params:
         subtitle: Systems problems and other topics
         avatar:
             local: false
-            src: /blog/img/avatar.png
+            src: /img/avatar.png
 
     article:
         math: true
