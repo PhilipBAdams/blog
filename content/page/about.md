@@ -15,7 +15,7 @@ I'm also interested in aviation, photography, functional programming, and backpa
 
 ### Contact
 You can reach me at
-`pba-blog (at) uchicago (dot) edu`.
+`blog (at) [this domain]`.
 
 I read many people's blogs, but am always too shy to email them with questions that I have. If you're like me, please consider this an open invitation to reach out. I'd love to hear from you!
 
