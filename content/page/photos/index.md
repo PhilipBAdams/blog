@@ -9,6 +9,7 @@ menu:
 license: "Licensed under CC BY-NC-ND 4.0"
 ---
 
+![Fisherman at Garrapata State Park, December 2015](garrapata.jpg)
 ![St. Louis, December 2016](output_berries.jpg) 
 ![St. Louis, December 2016](output_leaf.jpg)
 ![St. Louis, December 2016](output_tree.jpg)
