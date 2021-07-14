@@ -9,7 +9,7 @@ menu:
 ---
 
 ### Bio
-I am a student at [UChicago](https://computerscience.uchicago.edu/) studying Math and Computer Science. I'm primarily interested in systems problems, in particular Vector Search/ANN Search.
+I am a software engineer at [Microsoft](https://www.microsoft.com), working on [Bing](https://www.bing.com). I'm primarily interested in systems problems, in particular Vector Search/ANN Search.
 
 I'm also interested in aviation, photography, functional programming, and backpacking. I may touch on some of these topics on this blog, and you can see some of my photos [here](/photos).
 
