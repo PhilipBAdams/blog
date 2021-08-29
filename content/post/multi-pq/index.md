@@ -61,7 +61,7 @@ Another performance factor to consider is that of non-byte-aligned operations. N
 
 ## Results
 
-We ran experiments on a sampled set of 100M vectors sampled uniformly from the Deep1B dataset, provided by Babenko and Lempitsky in 2016[^deep1bcite]. We assigned query priors according to a Zipf distribution. We then ran experiments comparing Recall@R for HNSW search, comparing normal PQ with HPQ. We ran these experiments with varying numbers of codebooks and codebook sizes, and also included a comparison of the 'Index Size Efficiency,' or recall per megabyte of memory used by the index. We also compared performance to a simple ad-hoc approach of building a separate, higher quality index to store high-query-prior vectors. 
+We ran experiments on the GIST1M dataset. We assigned query priors according to a Zipf distribution. We then ran experiments comparing Recall@R for HNSW search, comparing normal PQ with HPQ. We ran these experiments with varying numbers of codebooks and codebook sizes, and also included a comparison of the 'Index Size Efficiency,' or recall per megabyte of memory used by the index. We also compared performance to a simple ad-hoc approach of building a separate, higher quality index to store high-query-prior vectors. 
 
 ![Recall@R of different Quantization approaches](hnsw_recall.png)
 
@@ -93,7 +93,6 @@ Note: the [featured image for this post](https://foto.wuestenigel.com/opening-ma
 [^opqcite]: Ge, Tiezheng, Kaiming He, Qifa Ke, and Jian Sun. "Optimized product quantization." *IEEE transactions on pattern analysis and machine intelligence* 36, no. 4 (2013): 744-755.
 [^cqcite]: Zhang, Ting, Chao Du, and Jingdong Wang. "Composite quantization for approximate nearest neighbor search." In *International Conference on Machine Learning*, pp. 838-846. PMLR, 2014.
 [^scanncite]: Guo, Ruiqi, Philip Sun, Erik Lindgren, Quan Geng, David Simcha, Felix Chern, and Sanjiv Kumar. "Accelerating large-scale inference with anisotropic vector quantization." In International Conference on Machine Learning, pp. 3887-3896. PMLR, 2020.
-[^deep1bcite]: Babenko, Artem, and Victor Lempitsky. "Efficient indexing of billion-scale datasets of deep descriptors." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 2055-2063. 2016.
 [^hnswcite]: Malkov, Yu A., and Dmitry A. Yashunin. "Efficient and robust approximate nearest neighbor search using hierarchical navigable small world graphs." *IEEE transactions on pattern analysis and machine intelligence* 42, no. 4 (2018): 824-836.
 [^faisscite]: https://github.com/facebookresearch/faiss
 [^swigcite]: http://www.swig.org/
