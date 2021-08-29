@@ -1,4 +1,4 @@
-baseurl: https://blog.pbada.ms
+baseurl: https://pbada.ms
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
