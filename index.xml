@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Philip Adams</title><link>https://blog.pbada.ms/</link><description>Recent content on Philip Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.pbada.ms/index.xml" rel="self" type="application/rss+xml"/><item><title>Hierarchical PQ for ANN Search</title><link>https://blog.pbada.ms/p/multi-pq/</link><pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><guid>https://blog.pbada.ms/p/multi-pq/</guid><description>&lt;img src="https://blog.pbada.ms/p/multi-pq/matryoshka-doll.jpg" alt="Featured image of post Hierarchical PQ for ANN Search" />&lt;h2 id="background">Background&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Philip Adams</title><link>https://pbada.ms/</link><description>Recent content on Philip Adams</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://pbada.ms/index.xml" rel="self" type="application/rss+xml"/><item><title>Hierarchical PQ for ANN Search</title><link>https://pbada.ms/p/multi-pq/</link><pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate><guid>https://pbada.ms/p/multi-pq/</guid><description>&lt;img src="https://pbada.ms/p/multi-pq/matryoshka-doll.jpg" alt="Featured image of post Hierarchical PQ for ANN Search" />&lt;h2 id="background">Background&lt;/h2>
 &lt;p>Approximate Nearest Neighbors (ANN) Search is a simple problem: given a vector query vector $q$, a set of database vectors $V$, and a metric $d$, find the $v\in V$ that minimize $d(q, v)$. The &lt;em>approximate&lt;/em> part of this problem is that an algorithm is allowed to be wrong, and so in particular doesn&amp;rsquo;t need to test every $v\in V$, allowing for significant improvements in performance through the use of various search structures and compression techniques.&lt;/p>
 &lt;p>An active research community has sprung up around building new techniques for this problem, driven by its importance to semantic search, where documents are embedded into a vector space to perform the search. &lt;a class="link" href="https://github.com/facebookresearch/faiss" target="_blank" rel="noopener"
 >Facebook&lt;/a>, &lt;a class="link" href="https://github.com/google-research/google-research/tree/master/scann" target="_blank" rel="noopener"
@@ -7,7 +7,7 @@
 >Yahoo&lt;/a> have all released productionized systems for ANN search, based on work done by research teams at each organization. There is even a site providing head-to-head benchmarks of different systems on reference datasets, at &lt;a class="link" href="http://ann-benchmarks.com" target="_blank" rel="noopener"
 >ann-benchmarks.com&lt;/a>.&lt;/p>
 &lt;p>One well-known compression technique is Product Quantization (PQ), first applied to ANN search in 2010 by Jegou et al&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. PQ is parameterized by two variables, $M$ and $nbits$. It splits each vector $v$ of dimension $d$ into $M$ subvectors $v_1,\dots, v_M$ of dimension $\frac{d}{M}$. Then, it trains $M$ codebooks with $2^{nbits}$ entries each using K-means clustering on the sets of subvectors. Now, every vector can be represented as a code of length $M\cdot nbits$. An additional benefit of a coding scheme is that rather than performing expensive distance calculations between vectors, a lookup table with $M\cdot 2^{nbits} \cdot 2^{nbits}$ entries can be constructed, and distance calculations are reduced to $M$ lookups in this table. Query vectors can be handled similarly, either by encoding the query vector under the PQ scheme and using the existing table (called Symmetric Distance Calculation (SDC)), or by computing a query-specific distance table of size $M \cdot nbits$ (called Asymmetric Distance Calculation (ADC)). For large datasets, these distance table approaches are significantly faster than normal distance calculations between unquantized vectors.&lt;/p>
-&lt;figure>&lt;img src="https://blog.pbada.ms/img/pq_encode.gif"
+&lt;figure>&lt;img src="https://pbada.ms/img/pq_encode.gif"
 alt="Process of encoding a vector with PQ"/>&lt;figcaption>
 &lt;p>Process of encoding a vector with PQ&lt;/p>
 &lt;/figcaption>
@@ -32,11 +32,11 @@ style="
 flex-grow: 58;
 flex-basis: 141px"
 >
-&lt;a href="https://blog.pbada.ms/p/multi-pq/hpq_cb.png" data-size="615x1045">
-&lt;img src="https://blog.pbada.ms/p/multi-pq/hpq_cb.png"
+&lt;a href="https://pbada.ms/p/multi-pq/hpq_cb.png" data-size="615x1045">
+&lt;img src="https://pbada.ms/p/multi-pq/hpq_cb.png"
 width="615"
 height="1045"
-srcset="https://blog.pbada.ms/p/multi-pq/hpq_cb_huea04246045900be5e9c9e94affcdb0d4_16007_480x0_resize_box_3.png 480w, https://blog.pbada.ms/p/multi-pq/hpq_cb_huea04246045900be5e9c9e94affcdb0d4_16007_1024x0_resize_box_3.png 1024w"
+srcset="https://pbada.ms/p/multi-pq/hpq_cb_huea04246045900be5e9c9e94affcdb0d4_16007_480x0_resize_box_3.png 480w, https://pbada.ms/p/multi-pq/hpq_cb_huea04246045900be5e9c9e94affcdb0d4_16007_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="HPQ Codebook">
 &lt;/a>
@@ -48,11 +48,11 @@ style="
 flex-grow: 115;
 flex-basis: 277px"
 >
-&lt;a href="https://blog.pbada.ms/p/multi-pq/hpq_dt.png" data-size="1055x914">
-&lt;img src="https://blog.pbada.ms/p/multi-pq/hpq_dt.png"
+&lt;a href="https://pbada.ms/p/multi-pq/hpq_dt.png" data-size="1055x914">
+&lt;img src="https://pbada.ms/p/multi-pq/hpq_dt.png"
 width="1055"
 height="914"
-srcset="https://blog.pbada.ms/p/multi-pq/hpq_dt_hu555a4b975c80a9b96a92fe40d55229fc_39492_480x0_resize_box_3.png 480w, https://blog.pbada.ms/p/multi-pq/hpq_dt_hu555a4b975c80a9b96a92fe40d55229fc_39492_1024x0_resize_box_3.png 1024w"
+srcset="https://pbada.ms/p/multi-pq/hpq_dt_hu555a4b975c80a9b96a92fe40d55229fc_39492_480x0_resize_box_3.png 480w, https://pbada.ms/p/multi-pq/hpq_dt_hu555a4b975c80a9b96a92fe40d55229fc_39492_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="HPQ Distance Table">
 &lt;/a>
@@ -72,11 +72,11 @@ style="
 flex-grow: 210;
 flex-basis: 505px"
 >
-&lt;a href="https://blog.pbada.ms/p/multi-pq/hnsw_recall.png" data-size="1064x505">
-&lt;img src="https://blog.pbada.ms/p/multi-pq/hnsw_recall.png"
+&lt;a href="https://pbada.ms/p/multi-pq/hnsw_recall.png" data-size="1064x505">
+&lt;img src="https://pbada.ms/p/multi-pq/hnsw_recall.png"
 width="1064"
 height="505"
-srcset="https://blog.pbada.ms/p/multi-pq/hnsw_recall_hub018a6a01496362e8dba160ba2bcb21b_89465_480x0_resize_box_3.png 480w, https://blog.pbada.ms/p/multi-pq/hnsw_recall_hub018a6a01496362e8dba160ba2bcb21b_89465_1024x0_resize_box_3.png 1024w"
+srcset="https://pbada.ms/p/multi-pq/hnsw_recall_hub018a6a01496362e8dba160ba2bcb21b_89465_480x0_resize_box_3.png 480w, https://pbada.ms/p/multi-pq/hnsw_recall_hub018a6a01496362e8dba160ba2bcb21b_89465_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Recall@R of different Quantization approaches">
 &lt;/a>
@@ -88,11 +88,11 @@ style="
 flex-grow: 213;
 flex-basis: 511px"
 >
-&lt;a href="https://blog.pbada.ms/p/multi-pq/size_efficiency.png" data-size="1077x505">
-&lt;img src="https://blog.pbada.ms/p/multi-pq/size_efficiency.png"
+&lt;a href="https://pbada.ms/p/multi-pq/size_efficiency.png" data-size="1077x505">
+&lt;img src="https://pbada.ms/p/multi-pq/size_efficiency.png"
 width="1077"
 height="505"
-srcset="https://blog.pbada.ms/p/multi-pq/size_efficiency_hu081bd740cbf313af4289f1fee08f0c9e_88058_480x0_resize_box_3.png 480w, https://blog.pbada.ms/p/multi-pq/size_efficiency_hu081bd740cbf313af4289f1fee08f0c9e_88058_1024x0_resize_box_3.png 1024w"
+srcset="https://pbada.ms/p/multi-pq/size_efficiency_hu081bd740cbf313af4289f1fee08f0c9e_88058_480x0_resize_box_3.png 480w, https://pbada.ms/p/multi-pq/size_efficiency_hu081bd740cbf313af4289f1fee08f0c9e_88058_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Size Efficiency of Quantization approaches">
 &lt;/a>
@@ -104,11 +104,11 @@ style="
 flex-grow: 190;
 flex-basis: 458px"
 >
-&lt;a href="https://blog.pbada.ms/p/multi-pq/perf_plot.png" data-size="964x505">
-&lt;img src="https://blog.pbada.ms/p/multi-pq/perf_plot.png"
+&lt;a href="https://pbada.ms/p/multi-pq/perf_plot.png" data-size="964x505">
+&lt;img src="https://pbada.ms/p/multi-pq/perf_plot.png"
 width="964"
 height="505"
-srcset="https://blog.pbada.ms/p/multi-pq/perf_plot_hua3530c4ba071ac4ee9bdd4634be2f4b9_78458_480x0_resize_box_3.png 480w, https://blog.pbada.ms/p/multi-pq/perf_plot_hua3530c4ba071ac4ee9bdd4634be2f4b9_78458_1024x0_resize_box_3.png 1024w"
+srcset="https://pbada.ms/p/multi-pq/perf_plot_hua3530c4ba071ac4ee9bdd4634be2f4b9_78458_480x0_resize_box_3.png 480w, https://pbada.ms/p/multi-pq/perf_plot_hua3530c4ba071ac4ee9bdd4634be2f4b9_78458_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 alt="Performance (QPS) of Quantization approaches with varying search depth">
 &lt;/a>
@@ -118,7 +118,7 @@ alt="Performance (QPS) of Quantization approaches with varying search depth">
 &lt;h2 id="other-experiments">Other Experiments&lt;/h2>
 &lt;p>We tried two other techniques for &amp;lsquo;prior-aware&amp;rsquo; search. The first was to modify the search structure in order to make high-query-prior vectors more likely to be considered during the search routine. We implemented this idea in a search structure called Hierarchical Navigable Small Worlds (HNSW), first presented by Malkov et al.&lt;sup id="fnref:8">&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref">8&lt;/a>&lt;/sup> in 2018. HNSW works by creating multiple layers, and selecting which layer each vector should have as it&amp;rsquo;s highest layer by sampling from an exponential distribution. So, the top layer will have very few vectors, and the lowest layer contains the whole dataset. Within each layer, a neighborhood graph is constructed, allowing for search within the layer. A full search starts at the top layer, searches within it, then goes down into the next layer, searches within that layer, and so on until the bottom layer is reached. This technique achieves some of the best results on &lt;a class="link" href="http://ann-benchmarks.com" target="_blank" rel="noopener"
 >ann-benchmarks.com&lt;/a>. We implemented a modification where instead of selecting a vector&amp;rsquo;s layer by sampling from a random distribution, it selected based on the sample plus the prior. This did have the effect of pushing high-prior vectors to higher layers, meaning that they were seen by more searches. However, in our experiments, that structural change did not have any impact on performance. Investigating this further may be the topic of a future blog post!&lt;/p>
-&lt;p>Another technique we tried was based around &amp;lsquo;learned termination&amp;rsquo;. Typical ANN search systems take some static parameter, usually called the &amp;lsquo;search depth&amp;rsquo;, that determines how extensive a search to perform (essentially, how many vectors to look at). Previous work by Ge et al in 2020&lt;sup id="fnref:9">&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref">9&lt;/a>&lt;/sup> used gradient boosting decision trees to predict midway through a search how helpful searching further would be, allowing early termination of the search when the model predicted that better results were unlikely to be found from searching further. This allows significant improvements in search throughput. We modified this system by including the query-priors of search candidates as features to the decision trees. If a search had no high-query-prior results, it might try searching a little bit further, to see if it can find one. Again, we didn&amp;rsquo;t find any significant change in search performance or accuracy from this change.&lt;/p>
+&lt;p>Another technique we tried was based around &amp;lsquo;learned termination&amp;rsquo;. Typical ANN search systems take some static parameter, usually called the &amp;lsquo;search depth&amp;rsquo;, that determines how extensive a search to perform (essentially, how many vectors to look at). Previous work by Ge et al. in 2020&lt;sup id="fnref:9">&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref">9&lt;/a>&lt;/sup> used gradient boosting decision trees to predict midway through a search how helpful searching further would be, allowing early termination of the search when the model predicted that better results were unlikely to be found from searching further. This allows significant improvements in search throughput. We modified this system by including the query-priors of search candidates as features to the decision trees. If a search had no high-query-prior results, it might try searching a little bit further, to see if it can find one. Again, we didn&amp;rsquo;t find any significant change in search performance or accuracy from this change.&lt;/p>
 &lt;h2 id="acknowledgments">Acknowledgments&lt;/h2>
 &lt;p>The majority of the work on this project was done as part of a course at UChicago, CMSC 33550, taught/advised by &lt;a class="link" href="https://raulcastrofernandez.com/" target="_blank" rel="noopener"
 >Raul Castro Fernandez&lt;/a>. My partner for the project was my friend &lt;a class="link" href="https://github.com/akabdo" target="_blank" rel="noopener"
