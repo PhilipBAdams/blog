@@ -78,6 +78,10 @@ We tried two other techniques for 'prior-aware' search. The first was to modify 
 
 Another technique we tried was based around 'learned termination'. Typical ANN search systems take some static parameter, usually called the 'search depth', that determines how extensive a search to perform (essentially, how many vectors to look at). Previous work by Ge et al. in 2020[^learned-termination-cite] used gradient boosting decision trees to predict midway through a search how helpful searching further would be, allowing early termination of the search when the model predicted that better results were unlikely to be found from searching further. This allows significant improvements in search throughput. We modified this system by including the query-priors of search candidates as features to the decision trees. If a search had no high-query-prior results, it might try searching a little bit further, to see if it can find one. Again, we didn't find any significant change in search performance or accuracy from this change.
 
+## Code
+
+The code used in these experiments can be found [here](https://github.com/PhilipBAdams/faiss-learned-termination-prior-weighted).
+
 ## Acknowledgments 
 The majority of the work on this project was done as part of a course at UChicago, CMSC 33550, taught/advised by [Raul Castro Fernandez](https://raulcastrofernandez.com/). My partner for the project was my friend [Abdo](https://github.com/akabdo).
 
