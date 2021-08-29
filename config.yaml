@@ -39,6 +39,7 @@ params:
             src: /img/avatar.png
 
     article:
+        toc: true
         math: true
         license:
             enabled: true

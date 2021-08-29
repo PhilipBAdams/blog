@@ -2,6 +2,7 @@
 title: "About"
 date: 
 draft: false
+toc: false
 menu:
     main: 
         weight: -90
