@@ -4,7 +4,7 @@ title: Going Bananas
 description: Tasting different banana cultivars
 date: 2022-06-20
 slug: banana-tasting
-tags: ["Off-topic", "Food"]
+tags: ["Off-topic", "Food", "Aviation"]
 image: banana_table.jpg
 draft: false
 ---
