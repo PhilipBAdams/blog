@@ -10,7 +10,7 @@ draft: false
 ---
 # Taste Testing
 
-How much of how food tastes is psychological? Do different colored veggie straws, skittles, or M&M's really taste different? Years of development of experimental methodologies and advanced statistical techniques have given us the tools we need to answer these deeply important questions. Today, we endeavour to understand the differiences within an extrememly common, highly processed, monocultural foodstuff: the banana.
+How much of how food tastes is psychological? Do different colored veggie straws, skittles, or M&M's really taste different? Years of development of experimental methodologies and advanced statistical techniques have given us the tools we need to answer these deeply important questions. Today, we endeavour to understand the differences within an extrememly common, highly processed, monocultural foodstuff: the banana.
 
 ## The Adams Fam Banana Ban
 For as long as I can remember, I've hated bananas, just like my parents and my sister. The sweet, almost rotting smell; the stringy texture - all of it is repulsive to me. But when was the last time I really gave them a fair chance? Do I actually hate bananas, or was it a learned behavior from growing up in a family of 'nanner naysayers? Also, a wide variety of bananas exist - you may have heard of the Gros Michel, a cultivar of banana that was common until it became uneconomical to grow due to the prevalence of [Panama Disease](https://en.wikipedia.org/wiki/Panama_disease). Could it be that there is a type of banana out there that I could actually... like?
