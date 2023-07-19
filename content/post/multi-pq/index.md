@@ -9,6 +9,11 @@ image: matryoshka-doll.jpg
 draft: false
 ---
 
+
+> **Note**: This approach is not performant in practice. 
+      Please don't use this in a production system. I've written about it here because I think
+      that it's a cool relaxation of PQ that clarifies some of the tradeoffs that make PQ good.
+
 ## Background
 
 Approximate Nearest Neighbors (ANN) Search is a simple problem: given a vector query vector $q$, a set of database vectors $V$, and a metric $d$, find the $v\in V$ that minimize $d(q, v)$. The *approximate* part of this problem is that an algorithm is allowed to be wrong, and so in particular doesn't need to test every $v\in V$, allowing for significant improvements in performance through the use of various search structures and compression techniques.
