@@ -45,4 +45,10 @@ license: "Licensed under CC BY-NC-ND 4.0"
 
 ![Bettyhill, Scotland, UK, July 2024](bettyhill_pano.jpg)
 
+![Abriachan, Scotland, UK, July 2024](logging_trail.jpg)
+![Scotland, UK, July 2024](scotland_road.jpg)
+
+![Scotland, UK, July 2024](horse_with_sheep.jpg)
+![Scotland, UK, July 2024](antlers.jpg)
+
 For higher quality copies of these images, [contact me](/about#contact).
