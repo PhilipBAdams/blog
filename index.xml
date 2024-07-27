@@ -157,7 +157,7 @@ that it&amp;rsquo;s a cool relaxation of PQ that clarifies some of the tradeoffs
 >ann-benchmarks.com&lt;/a>.&lt;/p>
 &lt;p>One well-known compression technique is Product Quantization (PQ), first applied to ANN search in 2010 by Jegou et al&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. PQ is parameterized by two variables, $M$ and $nbits$. It splits each vector $v$ of dimension $d$ into $M$ subvectors $v_1,\dots, v_M$ of dimension $\frac{d}{M}$. Then, it trains $M$ codebooks with $2^{nbits}$ entries each using K-means clustering on the sets of subvectors. Now, every vector can be represented as a code of length $M\cdot nbits$. An additional benefit of a coding scheme is that rather than performing expensive distance calculations between vectors, a lookup table with $M\cdot 2^{nbits} \cdot 2^{nbits}$ entries can be constructed, and distance calculations are reduced to $M$ lookups in this table. Query vectors can be handled similarly, either by encoding the query vector under the PQ scheme and using the existing table (called Symmetric Distance Calculation (SDC)), or by computing a query-specific distance table of size $M \cdot nbits$ (called Asymmetric Distance Calculation (ADC)). For large datasets, these distance table approaches are significantly faster than normal distance calculations between unquantized vectors.&lt;/p>
 &lt;figure>&lt;img src="https://pbada.ms/img/pq_encode.gif"
-alt="Process of encoding a vector with PQ"/>&lt;figcaption>
+alt="Process of encoding a vector with PQ">&lt;figcaption>
 &lt;p>Process of encoding a vector with PQ&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
