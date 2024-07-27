@@ -43,4 +43,6 @@ license: "Licensed under CC BY-NC-ND 4.0"
 
 ![Lake Toya, Hokkaido, JP, July 2023](toya_heli.jpg)
 
+![Bettyhill, Scotland, UK, July 2024](bettyhill_pano.jpg)
+
 For higher quality copies of these images, [contact me](/about#contact).
