@@ -10,7 +10,7 @@ menu:
 ---
 
 ### Bio
-I am a software engineer at [Microsoft](https://www.microsoft.com), working on [Bing](https://www.bing.com). Before that, I was a Math/CS student at [UChicago](https://www.uchicago.edu). I'm primarily interested in systems problems, in particular Vector Search/ANN Search.
+I am a software engineer at [Waymo](https://www.waymo.com). Previously, I worked on [Bing](https://www.bing.com). Before that, I was a Math/CS student at [UChicago](https://www.uchicago.edu). I'm primarily interested in systems that help us process and understand unstructured data, in particular search and example mining.
 
 I'm also interested in aviation, photography, functional programming, and backpacking. I may touch on some of these topics on this blog, and you can see some of my photos [here](/photos).
 
