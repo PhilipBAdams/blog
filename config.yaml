@@ -1,8 +1,14 @@
 baseurl: https://pbada.ms
-languageCode: en-us
-theme: hugo-theme-stack
+locale: en_US
+theme: github.com/CaiJimmy/hugo-theme-stack
 paginate: 5
 title: Philip Adams
+module:
+  imports:
+    - path: github.com/CaiJimmy/hugo-theme-stack
+  mounts:
+    - source: themes/hugo-theme-stack/assets
+      target: assets
 
 timeout: 60000
 
@@ -32,9 +38,7 @@ params:
     sidebar:
         emoji: 
         subtitle: Systems problems and other topics
-        avatar:
-            local: false
-            src: /img/avatar.png
+        avatar: /img/avatar.png
 
     article:
         toc: true
